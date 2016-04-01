@@ -14,16 +14,6 @@ header {
     display: none;
   }
 }
-#sponsor {
-  > div {
-    float: left;
-    margin: 1.4em 3.6em 0 3.6em;
-  }
-  img {
-    width: 80px;
-    vertical-align: top;
-  }
-}
 #main {
   /* TODO: Change it to this when it's fixed in less and IE8 support isn't no more
   background: url(../img/bg-david.png) no-repeat center 16em/100% auto;
@@ -98,6 +88,18 @@ footer {
 // Class
 ////////////////////////////////////////////////////////////////////////////////
 
+.sponsor {
+  display: none;
+
+  > div {
+    float: left;
+    margin: 1.4em 3.6em 0 3.6em;
+  }
+  img {
+    width: 80px;
+    vertical-align: top;
+  }
+}
 ul.stats {
   li {
     margin: 0.5em 0;
@@ -267,6 +269,9 @@ ul.stats {
 ////////////////////////////////////////////////////////////////////////////////
 
 #home-page {
+  #sponsor-0 {
+    display: block;
+  }
   #examples {
     list-style-type: none;
     padding: 0;
@@ -389,6 +394,9 @@ ul.stats {
 }
 
 #status-page {
+  #sponsor-1 {
+    display: block;
+  }
   #repo {
     h1 {
       color: @grey0;
